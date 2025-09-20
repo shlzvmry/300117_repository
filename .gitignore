@@ -1,0 +1,28 @@
+# Qt 编译生成文件
+build-*/
+*.pro.user
+*.autosave
+*.creator.user
+
+# 编译输出
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.lib
+
+# 调试文件
+*.debug
+*.release
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
+
+# 忽略所有项目的编译目录，但保留目录结构
+*/build/
