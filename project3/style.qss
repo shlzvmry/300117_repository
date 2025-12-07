@@ -1,0 +1,590 @@
+/* ====== 全局基础样式 ====== */
+* {
+    color: #e0e0e0;
+    selection-color: white;
+    selection-background-color: #5a7ea6;
+}
+
+QWidget {
+    background-color: transparent;
+    font-family: "Microsoft YaHei", "Segoe UI", sans-serif;
+}
+
+QLabel {
+    color: #e0e0e0;
+    font-size: 16px;
+}
+
+QPushButton {
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 4px 16px;
+    border: 1px solid !important;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    min-height: 36px;
+}
+
+QPushButton:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+QPushButton:pressed {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ====== 开发者信息容器 ====== */
+#infoContainer {
+    background-color: rgba(50, 60, 70, 0.9);
+    border: 1px solid #5a8bc8;
+    border-radius: 8px;
+    color: #5a8bc8;
+}
+
+#developerLabel {
+    font-size: 14px;
+    font-weight: 500;
+    color: #a0b0c0;
+    padding: 0;
+    margin: 0;
+}
+
+/* ====== 登录页面 ====== */
+#loginTitle {
+    font-size: 36px;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+#formLabel {
+    font-size: 18px;
+    color: #c0c8d0;
+    font-weight: 500;
+    min-width: 60px;
+}
+
+/* 账号密码输入框 */
+#loginInput {
+    font-size: 16px;
+    padding: 8px 16px;
+    border: 2px solid #4a5a6a;
+    border-radius: 8px;
+    background-color: #2a3440;
+    color: #ffffff;
+    min-height: 40px;
+    min-width: 350px;
+    transition: border-color 0.3s;
+}
+
+#loginInput:focus {
+    border-color: #5a8bc8;
+    background-color: #2f3a47;
+    outline: none;
+}
+
+#loginInput::placeholder {
+    color: #7a8696;
+    font-size: 15px;
+    font-style: italic;
+}
+
+/* 登录按钮 */
+#loginButton {
+    font-size: 17px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #4a7bc8, #5a8bd8);
+    color: white;
+    border-radius: 8px;
+    padding: 6px 30px;
+    min-height: 40px;
+    border: 2px solid #6a9be8;
+}
+
+#loginButton:hover {
+    background: linear-gradient(135deg, #5a8bd8, #6a9be8);
+    box-shadow: 0 4px 12px rgba(74, 123, 200, 0.3);
+    border-color: #7aabf8;
+}
+
+/* 注册按钮 */
+#registerButton {
+    font-size: 17px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #6a7a8a, #7a8a9a);
+    color: white;
+    border-radius: 8px;
+    padding: 6px 30px;
+    min-height: 40px;
+    border: 2px solid #8a9aaa;
+}
+
+#registerButton:hover {
+    background: linear-gradient(135deg, #7a8a9a, #8a9aaa);
+    box-shadow: 0 4px 12px rgba(106, 122, 138, 0.3);
+    border-color: #9ababa;
+}
+
+/* ====== 注册对话框样式 ====== */
+#registerDialog {
+    background-color: #2a3440;
+    border: 2px solid #5a7a9a;
+    border-radius: 10px;
+}
+
+#dialogLabel {
+    font-size: 16px;
+    color: #e0e0e0;
+    margin-bottom: 5px;
+}
+
+#dialogInput {
+    font-size: 16px;
+    padding: 10px 15px;
+    border: 2px solid #4a5a6a;
+    border-radius: 6px;
+    background-color: #2a3440;
+    color: white;
+    margin-bottom: 10px;
+    min-height: 40px;
+}
+
+#dialogInput:focus {
+    border-color: #5a8bc8;
+    outline: none;
+}
+
+#dialogInput::placeholder {
+    color: #7a8696;
+    font-size: 14px;
+}
+
+#dialogOkButton {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #3498db;
+    color: white;
+    border: 2px solid #3498db;
+    border-radius: 6px;
+    padding: 8px 20px;
+    min-width: 100px;
+}
+
+#dialogOkButton:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+#dialogCancelButton {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: transparent;
+    color: #95a5a6;
+    border: px solid #95a5a6;
+    border-radius: 6px;
+    padding: 8px 20px;
+    min-width: 100px;
+}
+
+#dialogCancelButton:hover {
+    color: #7f8c8d;
+    border-color: #7f8c8d;
+}
+
+/* ====== 主页面 ====== */
+#mainTitle {
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    margin: 20px 0 40px 0;
+    letter-spacing: 1.5px;
+}
+
+/* 主功能大按钮 */
+#mainButton {
+    font-size: 24px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #3a4a5a, #4a5a6a);
+    color: white;
+    border-radius: 16px;
+    padding: 15px;
+    border: 2px solid #5a7a9a;
+    min-height: 80px;
+    min-width: 250px;
+    transition: all 0.3s ease;
+}
+
+#mainButton:hover {
+    background: linear-gradient(135deg, #4a7bc8, #5a8bd8);
+    border-color: #6a9be8;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(74, 123, 200, 0.4);
+}
+
+/* 退出登录按钮 */
+#logoutButton {
+    font-size: 16px;
+    font-weight: 500;
+    background: linear-gradient(135deg, #c85a5a, #d86a6a);
+    color: white;
+    border-radius: 8px;
+    padding: 6px 25px;
+    min-height: 36px;
+    border: 2px solid #e87a7a;
+}
+
+#logoutButton:hover {
+    background: linear-gradient(135deg, #d86a6a, #e87a7a);
+    box-shadow: 0 4px 12px rgba(200, 90, 90, 0.3);
+    border-color: #f88a8a;
+}
+
+/* ====== 通用页面标题 ====== */
+#pageTitle {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    min-width: 300px;
+}
+
+/* ====== 返回按钮 ====== */
+#backButton {
+    font-size: 16px;
+    font-weight: 500;
+    color: #5a8bc8;
+    background: rgba(90, 139, 200, 0.1);
+    border: 1px solid #5a8bc8;
+    border-radius: 8px;
+    padding: 6px 20px;
+    min-height: 36px;
+    min-width: 100px;
+}
+
+#backButton:hover {
+    background: rgba(90, 139, 200, 0.2);
+    color: #6a9be8;
+    border-color: #6a9be8;
+}
+
+/* ====== 搜索区域 ====== */
+#searchInput {
+    font-size: 16px;
+    padding: 8px 16px;
+    border: 2px solid #4a5a6a;
+    border-radius: 8px;
+    background-color: #2a3440;
+    color: #ffffff;
+    min-height: 40px;
+}
+
+#searchInput:focus {
+    border-color: #5a8bc8;
+    background-color: #2f3a47;
+    box-shadow: 0 0 0 3px rgba(90, 139, 200, 0.2);
+}
+
+#searchInput::placeholder {
+    color: #7a8696;
+    font-size: 15px;
+    font-style: italic;
+}
+
+/* 搜索按钮 */
+#searchButton {
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #4a7bc8, #5a8bd8);
+    color: white;
+    border-radius: 8px;
+    padding: 6px 20px;
+    min-height: 40px;
+    min-width: 100px;
+    border: 2px solid #6a9be8;
+}
+
+#searchButton:hover {
+    background: linear-gradient(135deg, #5a8bd8, #6a9be8);
+    box-shadow: 0 4px 12px rgba(74, 123, 200, 0.3);
+    border-color: #7aabf8;
+}
+
+/* 操作按钮（添加/编辑/删除） */
+#actionButton {
+    font-size: 15px;
+    font-weight: 500;
+    background: linear-gradient(135deg, #5a7a9a, #6a8aaa);
+    color: white;
+    border-radius: 8px;
+    padding: 6px 20px;
+    min-height: 40px;
+    min-width: 100px;
+    border: 2px solid #8a9aaa;
+}
+
+#actionButton:hover {
+    background: linear-gradient(135deg, #6a8aaa, #7a9aba);
+    box-shadow: 0 4px 12px rgba(90, 122, 154, 0.3);
+    border-color: #9ababa;
+}
+
+/* ====== 表格样式 ====== */
+#dataTable {
+    font-size: 14px;
+    background-color: #2a3440;
+    border: 2px solid #3a4a5a;
+    border-radius: 10px;
+    gridline-color: #3a4a5a;
+    selection-background-color: #5a7ea6;
+    selection-color: white;
+    alternate-background-color: #25303a;
+
+    /* 设置表格最小高度，增加初始显示区域 */
+    min-height: 500px;
+}
+
+/* 表格行样式 */
+#dataTable::item {
+    padding: 4px 8px;
+    border-bottom: 1px solid #3a4a5a;
+    min-height: 42px;
+}
+
+#dataTable::item:selected {
+    background-color: #5a7ea6;
+    color: white;
+}
+
+#dataTable::item:hover {
+    background-color: #354250;
+}
+
+/* 表头样式 */
+QHeaderView::section {
+    background-color: #3a4a5a;
+    padding: 6px 10px;
+    border: none;
+    border-right: 1px solid #4a5a6a;
+    border-bottom: 2px solid #5a6a7a;
+    font-weight: 630;
+    color: #e0e0e0;
+    font-size: 15px;
+    min-height: 42px;
+}
+
+/* ====== 表单区域 ====== */
+#formGroup {
+    border: 2px solid #5a7a9a;
+    border-radius: 12px;
+    padding: 13px;
+    margin: 10px 0;
+    background-color: rgba(42, 52, 64, 0.8);
+}
+
+#formGroup::title {
+    color: #5a8bc8;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 12px;
+    background-color: transparent;
+}
+
+/* 表单输入控件 */
+#formInput, #formCombo, #formDate, #formSpin {
+    font-size: 15px;
+    padding: 10px 16px;
+    border: 2px solid #4a5a6a;
+    border-radius: 8px;
+    background-color: #2a3440;
+    color: #ffffff;
+    min-height: 40px;
+}
+
+#formInput:focus, #formCombo:focus, #formDate:focus, #formSpin:focus {
+    border-color: #5a8bc8;
+    background-color: #2f3a47;
+}
+
+#formCombo::drop-down {
+    border: none;
+    background-color: #3a4a5a;
+    width: 28px;
+}
+
+#formCombo QAbstractItemView {
+    background-color: #2a3440;
+    border: 2px solid #5a8bc8;
+    border-radius: 8px;
+    selection-background-color: #5a7ea6;
+}
+
+/* 主要按钮（保存） */
+#primaryButton {
+    font-size: 17px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #4a7bc8, #5a8bd8);
+    color: white;
+    border-radius: 8px;
+    padding: 8px 30px;
+    min-height: 42px;
+    border: 2px solid #6a9be8;
+    min-width: 140px;
+}
+
+#primaryButton:hover {
+    background: linear-gradient(135deg, #5a8bd8, #6a9be8);
+    box-shadow: 0 6px 18px rgba(74, 123, 200, 0.4);
+}
+
+/* 次要按钮（取消） */
+#secondaryButton {
+    font-size: 17px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #6a7a8a, #7a8a9a);
+    color: white;
+    border-radius: 8px;
+    padding: 8px 30px;
+    min-height: 42px;
+    border: 2px solid #8a9aaa;
+    min-width: 140px;
+}
+
+#secondaryButton:hover {
+    background: linear-gradient(135deg, #7a8a9a, #8a9aaa);
+    box-shadow: 0 6px 18px rgba(106, 122, 138, 0.3);
+}
+
+/* ====== 输入组件通用样式 ====== */
+QLineEdit, QTextEdit, QPlainTextEdit, QSpinBox, QDoubleSpinBox, QComboBox, QDateEdit {
+    color: #ffffff;
+    background-color: #2a3440;
+    border: 2px solid #4a5a6a;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 15px;
+    selection-color: white;
+    selection-background-color: #5a7ea6;
+}
+
+QLineEdit:focus, QTextEdit:focus, QPlainTextEdit:focus,
+QSpinBox:focus, QDoubleSpinBox:focus, QComboBox:focus, QDateEdit:focus {
+    border-color: #5a8bc8;
+    background-color: #2f3a47;
+}
+
+/* ====== 下拉菜单样式 ====== */
+QComboBox QAbstractItemView {
+    background-color: #2a3440;
+    border: 2px solid #5a8bc8;
+    selection-background-color: #5a7ea6;
+    color: #e0e0e0;
+    font-size: 14px;
+}
+
+/* ====== 分组框通用样式 ====== */
+QGroupBox {
+    color: #5a8bc8;
+    font-weight: 600;
+    font-size: 17px;
+    border: 2px solid #5a7a9a;
+    border-radius: 10px;
+    margin-top: 8px;
+    padding-top: 12px;
+    background-color: rgba(42, 52, 64, 0.8);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 12px;
+    background-color: transparent;
+}
+
+/* ====== 消息对话框 ====== */
+QMessageBox {
+    background-color: #2a3440;
+    border: 2px solid #5a7a9a;
+    border-radius: 12px;
+}
+
+QMessageBox QLabel {
+    color: #e0e0e0;
+    font-size: 15px;
+    padding: 12px;
+}
+
+QMessageBox QPushButton {
+    font-size: 14px;
+    padding: 6px 18px;
+    min-width: 75px;
+    min-height: 34px;
+    background-color: #4a5a6a;
+    color: white;
+    border-radius: 6px;
+    border: 1px solid #5a6a7a;
+    margin: 4px;
+}
+
+QMessageBox QPushButton:hover {
+    background-color: #5a6a7a;
+}
+
+/* ====== 滚动条样式 ====== */
+QScrollBar:vertical {
+    background-color: #2a3440;
+    width: 12px;
+    border-radius: 6px;
+    margin: 2px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #5a7a9a;
+    border-radius: 6px;
+    min-height: 25px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #6a8aaa;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    border: none;
+    background: none;
+    height: 0;
+}
+
+/* ====== 数字调节框按钮样式 ====== */
+QSpinBox::up-button, QSpinBox::down-button,
+QDoubleSpinBox::up-button, QDoubleSpinBox::down-button {
+    background-color: #4a5a6a;
+    border: 1px solid #5a6a7a;
+    width: 22px;
+    border-radius: 4px;
+}
+
+QSpinBox::up-button:hover, QSpinBox::down-button:hover,
+QDoubleSpinBox::up-button:hover, QDoubleSpinBox::down-button:hover {
+    background-color: #5a6a7a;
+}
+
+/* ====== 日期编辑框按钮样式 ====== */
+QDateEdit::drop-down {
+    background-color: #4a5a6a;
+    border: 1px solid #5a6a7a;
+    border-radius: 4px;
+    width: 26px;
+}
+
+/* ====== 占位符文字样式 ====== */
+::placeholder {
+    color: #7a8696;
+    font-size: 14px;
+    font-style: italic;
+}
