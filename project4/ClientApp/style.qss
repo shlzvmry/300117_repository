@@ -1,0 +1,72 @@
+QWidget {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    font-size: 16px; /* Adjust base font size as needed */
+}
+
+/* --- 主窗口 --- */
+QMainWindow {
+    color: #FFFFFF;
+}
+
+/* --- 信息标签 --- */
+QLabel#infoLabel {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #657896;
+    padding: 10px;
+    border-bottom: 1px solid #AAAAAA;
+}
+
+/* --- 聊天显示区域 --- */
+QTextEdit {
+    background-color: #2D2D2D;
+    color: #FFFFFF;
+    border: 1px solid #657896;
+}
+
+/* --- 列表显示区域 --- */
+QListWidget {
+    background-color: #2D2D2D;
+    color: #FFFFFF;
+    border: 1px solid #657896;
+}
+
+/* --- 登录界面 --- */
+QWidget#loginContainer QWidget {
+    qproperty-alignment: AlignCenter;
+}
+
+QLineEdit {
+    background-color: #2D2D2D;
+    color: #FFFFFF;
+    border: 1px solid #657896;
+    width: 150px;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+QVBoxLayout > QWidget QLabel {
+     text-align: center;
+     margin-bottom: 5px;
+}
+
+/* --- 按钮通用样式 --- */
+QPushButton {
+    background-color: #657896;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    min-width: 80px;
+}
+
+QPushButton:hover {
+    background-color: #7A8BA8;
+}
+
+QPushButton:pressed {
+    background-color: #506078;
+}
